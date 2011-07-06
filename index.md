@@ -3,11 +3,11 @@ title: The Aura SQL connecting with Relational Database
 layout: cloud
 ---
 
-<div class="grid_4" markdown="1">
+<div class="grid_3" markdown="1" id="githubrepos">
 
 </div>
 
-<div class="grid_8" markdown="1">
+<div class="grid_9" markdown="1">
 
 Getting Started
 ---------------
