@@ -3,12 +3,6 @@ title: The Aura SQL connecting with Relational Database
 layout: cloud
 ---
 
-<div class="grid_3" markdown="1" id="githubrepos">
-
-</div>
-
-<div class="grid_9" markdown="1">
-
 Getting Started
 ---------------
 
@@ -256,7 +250,3 @@ MinSrc means Model in SRC .
 Model in Model folder.
 
 Hope you enjoyed connecting with model in system.
-
-</div>
-
-<div class="clear">&nbsp;</div>
