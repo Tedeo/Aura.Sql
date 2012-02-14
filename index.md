@@ -1,6 +1,6 @@
 ---
 title: Aura for PHP -- A wrapper around PDO that provides adapters and convenience methods for MySQL, PostgreSQL, and Sqlite.
-layout: default
+layout: cloud
 ---
 
 Aura.Sql
