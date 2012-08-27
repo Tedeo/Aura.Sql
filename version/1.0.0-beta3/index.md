@@ -333,21 +333,19 @@ To get a new `Select` object, invoke the `newSelect()` method on an adapter.
 You can then modify the `Select` object and pass it to the `query()` or
 `fetch*()` method.
 
-```php
-<?php
-// create a new Select object
-$select = $sql->newSelect();
+    <?php
+    // create a new Select object
+    $select = $sql->newSelect();
 
-// SELECT * FROM foo WHERE bar > :bar ORDER BY baz
-$select->cols(['*'])
-       ->from('foo')
-       ->where('bar > :bar')
-       ->orderBy('baz');
+    // SELECT * FROM foo WHERE bar > :bar ORDER BY baz
+    $select->cols(['*'])
+           ->from('foo')
+           ->where('bar > :bar')
+           ->orderBy('baz');
 
-$data['foo' => '88'];
+    $data['foo' => '88'];
 
-$list = $sql->fetchAll($select, $data);
-```
+    $list = $sql->fetchAll($select, $data);
 
 The `Select` object has these methods and more; please read the source code
 for more information.
@@ -386,23 +384,21 @@ Insert
 To get a new `Insert` object, invoke the `newInsert()` method on an adapter.
 You can then modify the `Insert` object and pass it to the `query()` method.
 
-```php
-<?php
-// create a new Insert object
-$insert = $sql->newInsert();
+    <?php
+    // create a new Insert object
+    $insert = $sql->newInsert();
 
-// INSERT INTO foo (bar, baz, date) VALUES (:foo, :bar, NOW());
-$insert->into('foo')
-       ->cols(['bar', 'baz'])
-       ->set('date', 'NOW()');
+    // INSERT INTO foo (bar, baz, date) VALUES (:foo, :bar, NOW());
+    $insert->into('foo')
+           ->cols(['bar', 'baz'])
+           ->set('date', 'NOW()');
 
-$data[
-    'foo' => null,
-    'bar' => 'zim',
-];
+    $data[
+        'foo' => null,
+        'bar' => 'zim',
+    ];
 
-$stmt = $sql->query($insert, $data);
-```
+    $stmt = $sql->query($insert, $data);
 
 Update
 ------
@@ -410,28 +406,26 @@ Update
 To get a new `Update` object, invoke the `newUpdate()` method on an adapter.
 You can then modify the `Update` object and pass it to the `query()` method.
 
-```php
-<?php
-// create a new Update object
-$update = $sql->newUpdate();
+    <?php
+    // create a new Update object
+    $update = $sql->newUpdate();
 
-// UPDATE foo SET bar = :bar, baz = :baz, date = NOW() WHERE zim = :zim OR gir = :gir
-$update->table('foo')
-       ->cols(['bar', 'baz'])
-       ->set('date', 'NOW()')
-       ->where('zim = :zim')
-       ->orWhere('gir = :gir');
+    // UPDATE foo SET bar = :bar, baz = :baz, date = NOW() WHERE zim = :zim OR gir = :gir
+    $update->table('foo')
+           ->cols(['bar', 'baz'])
+           ->set('date', 'NOW()')
+           ->where('zim = :zim')
+           ->orWhere('gir = :gir');
 
-$data[
-    'foo' => null,
-    'bar' => 'barbar',
-    'baz' => 99,
-    'zim' => 'dib',
-    'gir' => 'doom',
-];
+    $data[
+        'foo' => null,
+        'bar' => 'barbar',
+        'baz' => 99,
+        'zim' => 'dib',
+        'gir' => 'doom',
+    ];
 
-$stmt = $sql->query($update, $data);
-```
+    $stmt = $sql->query($update, $data);
 
 Delete
 ------
@@ -439,20 +433,18 @@ Delete
 To get a new `Delete` object, invoke the `newDelete()` method on an adapter.
 You can then modify the `Delete` object and pass it to the `query()` method.
 
-```php
-<?php
-// create a new Delete object
-$delete = $sql->newDelete();
+    <?php
+    // create a new Delete object
+    $delete = $sql->newDelete();
 
-// DELETE FROM WHERE zim = :zim OR gir = :gir
-$delete->from('foo')
-       ->where('zim = :zim')
-       ->orWhere('gir = :gir');
+    // DELETE FROM WHERE zim = :zim OR gir = :gir
+    $delete->from('foo')
+           ->where('zim = :zim')
+           ->orWhere('gir = :gir');
 
-$data[
-    'zim' => 'dib',
-    'gir' => 'doom',
-];
+    $data[
+        'zim' => 'dib',
+        'gir' => 'doom',
+    ];
 
-$stmt = $sql->query($delete, $data);
-```
+    $stmt = $sql->query($delete, $data);
