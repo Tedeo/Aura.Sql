@@ -10,7 +10,6 @@
  */
 namespace Aura\Sql;
 
-use Exception;
 use PDOStatement;
 
 /**
