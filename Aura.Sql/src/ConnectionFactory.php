@@ -32,7 +32,6 @@ class ConnectionFactory
         'mysql'  => 'Aura\Sql\MysqlConnection',
         'pgsql'  => 'Aura\Sql\PgsqlConnection',
         'sqlite' => 'Aura\Sql\SqliteConnection',
-        'sqlsrv' => 'Aura\Sql\SqlsrvConnection',
     ];
 
     protected $signal;
