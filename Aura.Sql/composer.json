@@ -1,0 +1,22 @@
+{
+    "name": "aura/sql",
+    "type": "library",
+    "description": "A wrapper around PDO that provides connection adapters and convenience methods for MySQL, PostgreSQL, and SQLite.",
+    "keywords": [ "abstraction", "database", "db", "mysql", "pdo", "pgsql", "postgres", "postgresql", "sqlite"],
+    "homepage": "http://auraphp.github.com/Aura.Sql",
+    "license": "BSD-2-Clause",
+    "authors": [
+        {
+            "name": "Aura Contributors",
+            "homepage": "https://github.com/auraphp/Aura.Sql/contributors"
+        }
+    ],
+    "require": {
+        "php": ">=5.4.0",
+    },
+    "autoload": {
+        "psr-x": {
+            "Aura\\Sql": "src/"
+        }
+    }
+}
