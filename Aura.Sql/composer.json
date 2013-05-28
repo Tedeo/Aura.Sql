@@ -1,7 +1,7 @@
 {
     "name": "aura/sql",
     "type": "library",
-    "description": "A wrapper around PDO that provides connection adapters and convenience methods for MySQL, PostgreSQL, and SQLite.",
+    "description": "A wrapper around PDO that provides connection adapters and convenience methods for MySQL, PostgreSQL, and SQLite. Includes a query profiler and a connection manager.",
     "keywords": [ "abstraction", "database", "db", "mysql", "pdo", "pgsql", "postgres", "postgresql", "sqlite"],
     "homepage": "http://auraphp.github.com/Aura.Sql",
     "license": "BSD-2-Clause",
