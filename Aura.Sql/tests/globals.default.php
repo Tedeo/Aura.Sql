@@ -1,7 +1,9 @@
 <?php
 /**
- * Aura\Sql\Setup\MysqlSetup
+ * Mysql
  */
+
+// setup
 $GLOBALS['Aura\Sql\Setup\MysqlSetup']['connection_params'] = [
     'dsn' => [
         'host' => '127.0.0.1',
@@ -11,14 +13,14 @@ $GLOBALS['Aura\Sql\Setup\MysqlSetup']['connection_params'] = [
     'options' => [],
 ];
 
-/**
- * Aura\Sql\MysqlConnectionTest
- */
+// test
 $GLOBALS['Aura\Sql\MysqlConnectionTest']['expect_dsn_string'] = 'mysql:host=127.0.0.1';
 
 /**
- * Aura\Sql\Setup\PgsqlSetup
+ * Pgsql
  */
+
+// setup
 $GLOBALS['Aura\Sql\Setup\PgsqlSetup']['connection_params'] = [
     'dsn' => [
         'host' => '127.0.0.1',
@@ -29,19 +31,17 @@ $GLOBALS['Aura\Sql\Setup\PgsqlSetup']['connection_params'] = [
     'options' => [],
 ];
 
-/**
- * Aura\Sql\PgsqlConnectionTest
- */
+// test
 $GLOBALS['Aura\Sql\PgsqlConnectionTest']['expect_dsn_string'] = 'pgsql:host=127.0.0.1;dbname=test';
 
 /**
- * Aura\Sql\Setup\SqliteSetup
+ * Sqlite
  */
+
+// setup
 $GLOBALS['Aura\Sql\Setup\SqliteSetup']['connection_params'] = [
     'dsn' => ':memory:',
 ];
 
-/**
- * Aura\Sql\SqliteConnectionTest
- */
+// test
 $GLOBALS['Aura\Sql\SqliteConnectionTest']['expect_dsn_string'] = 'sqlite::memory:';
